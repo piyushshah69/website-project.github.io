@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorKart Website</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Header section  -->
+
+    <nav>
+        <input type="checkbox" id="menu-checkbox">
+        <div class="nav-left">
+            <label class="hamburger-menu" for="menu-checkbox">
+                <div class="hamburger-l1"></div>
+                <div class="hamburger-l2"></div>
+                <div class="hamburger-l3"></div>
+            </label>
+            <a href="/"><img class="logo" src="images/mentorkart-logo.png" alt="MentorKart Logo"></a>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-items">
+                <a href="">
+                    <li>Find a mentor</li>
+                </a>
+                <a href="">
+                    <li>Goal Based Mentorship</li>
+                </a>
+                <a href="">
+                    <li>Programs & Courses</li>
+                </a>
+                <a href="">
+                    <li>Live Sessions</li>
+                </a>
+                <a href="">
+                    <li>Job Guarantee</li>
+                </a>
+                <a href="">
+                    <li>Hire from us</li>
+                </a>
+                <a href="">
+                    <li>Community</li>
+                </a>
+            </ul>
+            <div class="notification-profile">
+                <div class="notification">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bell" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                    </svg>
+                </div>
+                <div class="profile">
+                    <div class="profile-icon">PS</div>
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down logout-btn" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="logout .logout-active">
+            <p>Dashboard <i class="bi bi-speedometer2"></i></p>
+            <p>Settings <i class="bi bi-gear"></i></p>
+            <button class="explore-programs-btn">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Head section -->
+
+    <section class="hero">
+        <div class="hero-heading">
+            <h1>Goal Based Mentorship</h1>
+            <p>Achieve your goals with specially designed 1:1 Mentoship Programs. Choose from wide range of custom made
+                Industry ready
+                programs.</p>
+        </div>
+        <img class="hero-map" src="images/hero-map-image.png" alt="Goal based map">
+        <img class="hero-path" src="images/hero-path-image.png" alt="Goal based image">
+    </section>
+
+    <!-- Courses section  -->
+
+    <section class="courses">
+        <div class="courses-heading">
+            <h2>Our Goal Based Programs</h2>
+            <div class="courses-buttons">
+                <button class="explore-all">Explore all</button>
+                <div class="scroll-buttons">
+                    <button class="left-scroll"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                        </svg></button>
+                    <button class="right-scroll"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+        <div class="courses-category">
+            <h3 class="course-category-student courses-category-active courses-category-inactive">Student</h3>
+            <h3 class="course-category-professional courses-category-inactive">Professional</h3>
+            <h3 class="course-category-entreprenuer courses-category-inactive">Entreprenuer</h3>
+        </div>
+        <div class="courses-container">
+
+            <div class="course">
+                <img src="images/crack-interview-course.webp" alt="Crack interview course" class="course-image">
+                <div class="course-info">
+                    <h3>Growth as an IT Professional</h3>
+                    <div class="course-type-duration">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-people" viewBox="0 0 16 16">
+                                <path
+                                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                            </svg>Professionals</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-calendar3" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                                <path
+                                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            </svg>2 Weeks course</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="images/startup-finances-course.webp" alt="Crack interview course" class="course-image">
+                <div class="course-info">
+                    <h3>Learn about managing...</h3>
+                    <div class="course-type-duration">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-people" viewBox="0 0 16 16">
+                                <path
+                                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                            </svg>Students, Professionals</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-calendar3" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                                <path
+                                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            </svg>2 Days course</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="images/crack-interview-course.webp" alt="Crack interview course" class="course-image">
+                <div class="course-info">
+                    <h3>Growth as an IT Professional</h3>
+                    <div class="course-type-duration">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-people" viewBox="0 0 16 16">
+                                <path
+                                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                            </svg>Professionals</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-calendar3" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                                <path
+                                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            </svg>2 Weeks course</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="images/startup-finances-course.webp" alt="Crack interview course" class="course-image">
+                <div class="course-info">
+                    <h3>Learn about managing...</h3>
+                    <div class="course-type-duration">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-people" viewBox="0 0 16 16">
+                                <path
+                                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                            </svg>Students, Professionals</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-calendar3" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                                <path
+                                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            </svg>2 Days course</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="images/crack-interview-course.webp" alt="Crack interview course" class="course-image">
+                <div class="course-info">
+                    <h3>Growth as an IT Professional</h3>
+                    <div class="course-type-duration">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-people" viewBox="0 0 16 16">
+                                <path
+                                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                            </svg>Professionals</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-calendar3" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                                <path
+                                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            </svg>2 Weeks course</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="images/startup-finances-course.webp" alt="Crack interview course" class="course-image">
+                <div class="course-info">
+                    <h3>Learn about managing...</h3>
+                    <div class="course-type-duration">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-people" viewBox="0 0 16 16">
+                                <path
+                                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                            </svg>Students, Professionals</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-calendar3" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                                <path
+                                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            </svg>2 Days course</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="explore-programs">
+            <button class="explore-programs-btn">Explore Programs</button>
+        </div>
+    </section>
+
+    <!-- Goal Based Info  -->
+
+    <section class="goal-based-info">
+
+        <div class="goal-based-info-heading">
+            <h2>Why would you opt Goal Based Program</h2>
+            <p class="goal-based-info-hidden-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+                molestiae</p>
+        </div>
+
+        <img class="goal-based-image" src="images/climbing-man.png" alt="climing man">
+
+        <div class="goal-based-info-infoboxes">
+            <div class="info-box1">
+                <div class="info-box">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-stars" viewBox="0 0 16 16">
+                            <path
+                                d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
+                        </svg>
+                    </div>
+                    <h3>Develop your skills and shine
+                        among the peers</h3>
+                    <p>Don’t know what skills you are lacking to help you grow in your domain?
+                        Our 1:1 mentorship sessions will help your skills personally. Don’t think too much and let’s
+                        start.
+                    </p>
+                </div>
+            </div>
+            <div class="info-box2">
+                <div class="info-box">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-emoji-smile-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z" />
+                        </svg>
+                    </div>
+                    <h3>Get MentorKart Mentorship Program for free</h3>
+                    <p>A soft skills program is to develop your confidence, enhanced problem solving and build strong
+                        leadership skills.</p>
+                </div>
+            </div>
+            <div class="info-box3">
+                <div class="info-box">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cursor-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z" />
+                        </svg>
+                    </div>
+                    <h3>Get to choose your own Mentor</h3>
+                    <p>Find a mentor for yourself who aligns with your career goals. This will also help in building
+                        your
+                        network.
+                    </p>
+                </div>
+            </div>
+            <div class="info-box4">
+                <div class="info-box">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z" />
+                        </svg>
+                    </div>
+                    <h3>Get Roadmap of your Growth</h3>
+                    <p>A roadmap can make you set clear goals, prioritize actions and track your progress along the way.
+                    </p>
+                </div>
+            </div>
+            <div class="info-box5">
+                <div class="info-box">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-reception-4" viewBox="0 0 16 16">
+                            <path
+                                d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z" />
+                        </svg>
+                    </div>
+                    <h3>Continuous Industry Mentorship</h3>
+                    <p>It is crucial that the mentee get continuous mentorship for more in-depth guidance and support to
+                        meet the needs as they
+                        grow and develop in their career.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="explore-programs-btn">Explore Programs</button>
+    </section>
+
+    <!-- Pay what is needed section  -->
+
+    <section class="pay-tagline">
+        <h2>Pay what is needed, not an extra!</h2>
+        <p>Our moto is to deliver high quality mentorship at affordable prices</p>
+    </section>
+
+    <!-- Accomplish goals section  -->
+
+    <section class="accomplish-goals">
+        <div class="text">
+            <h1>Are you a Student??</h1>
+            <p>Worried about your upcoming interviews?? Or Want to understand few topics which can be helpful in getting
+                a job?? Take
+                Help from our Mentors who have already done it before.</p>
+            <button class="explore-programs-btn">Accomplish Your Goals</button>
+        </div>
+        <div class="img">
+            <img src="images/accomplish-goals.png" alt="Accomplish Goals">
+        </div>
+    </section>
+
+    <!-- Meet Mentors section  -->
+
+    <div class="meet-mentors">
+        <h2>Meet our Mentors</h2>
+        <p>Have a look at some of our mentors who will be helping you along the way</p>
+    </div>
+
+    <!-- Mentors Section  -->
+
+    <section class="mentors">
+
+        <div class="mentor">
+            <img src="images/ashish-khare.png" alt="Ashish Khare">
+            <div class="info">
+                <h3>Ashish Khare</h3>
+                <p>Entrepreneur | HR Consultant</p>
+            </div>
+        </div>
+
+        <div class="mentor">
+            <img src="images/pooja-nath.png" alt="Pooja Nath">
+            <div class="info">
+                <h3>Pooja Nath</h3>
+                <p>Entrepreneur | HR Consultant</p>
+            </div>
+        </div>
+
+        <div class="mentor">
+            <img src="images/vivek-dahiya.png" alt="Vivek Dahiya">
+            <div class="info">
+                <h3>Vivek Dahiya</h3>
+                <p>Startup Mentor | Advocate</p>
+            </div>
+        </div>
+
+        <div class="mentor">
+            <img src="images/ashish-khare.png" alt="Ashish Khare">
+            <div class="info">
+                <h3>Ashish Khare</h3>
+                <p>Entrepreneur | HR Consultant</p>
+            </div>
+        </div>
+
+        <div class="mentor">
+            <img src="images/pooja-nath.png" alt="Pooja Nath">
+            <div class="info">
+                <h3>Pooja Nath</h3>
+                <p>Entrepreneur | HR Consultant</p>
+            </div>
+        </div>
+
+        <div class="mentor">
+            <img src="images/vivek-dahiya.png" alt="Vivek Dahiya">
+            <div class="info">
+                <h3>Vivek Dahiya</h3>
+                <p>Startup Mentor | Advocate</p>
+            </div>
+        </div>
+
+        <div class="mentor">
+            <img src="images/ashish-khare.png" alt="Ashish Khare">
+            <div class="info">
+                <h3>Ashish Khare</h3>
+                <p>Entrepreneur | HR Consultant</p>
+            </div>
+        </div>
+
+        <div class="mentor">
+            <img src="images/pooja-nath.png" alt="Pooja Nath">
+            <div class="info">
+                <h3>Pooja Nath</h3>
+                <p>Entrepreneur | HR Consultant</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Excel in Interview section -->
+
+    <section class="excel-interview">
+        <img src="images/left-graphics.png" class="left-graphics">
+        <div class="text">
+            <h1>How to Excel in a Job Interview with Confidence</h1>
+            <p>Demonstrate to the interviewer that you have the knowledge, skills, and qualifications required for the
+                job, which will
+                increase your chances of getting hired.
+                Never show the fear in your voice.</p>
+            <button class="explore-programs-btn">Enroll Now</button>
+        </div>
+        <div class="img">
+            <img src="images/interview.png" alt="Interview">
+        </div>
+        <img src="images/right-graphics.png" class="right-graphics">
+    </section>
+
+    <!-- FAQ section  -->
+
+    <section class="faqs-section">
+
+        <h2>Frequently asked questions(FAQs)</h2>
+
+        <div class="faqs">
+            <div class="faq faq-1">
+                <p class="question question-1">How many sessions will I be getting in this program?<i
+                        class="bi bi-plus-circle-fill plus-rotate plus-active plus plus-1"></i>
+                    <i class="bi bi-dash-circle-fill minus-inactive minus minus-1"></i>
+                </p>
+                <p class="answer answer-1 answer-inactive">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat quasi aliquam possimus architecto, consequuntur doloremque, et porro odio non corporis itaque
+                    molestiae nihil! Expedita nemo saepe commodi at dolores consequuntur qui sit alias illo quas nam
+                    accusamus quibusdam mollitia totam id laboriosam, aut, assumenda reiciendis, necessitatibus
+                    molestiae accusantium corrupti. Corporis?</p>
+            </div>
+            <div class="faq faq-2">
+                <p class="question question-2">Can I choose from the pool of mentors?<i
+                        class="bi bi-plus-circle-fill plus-rotate plus-active plus plus-2"></i>
+                    <i class="bi bi-dash-circle-fill minus-inactive minus minus-2"></i>
+                </p>
+                <p class="answer answer-2 answer-inactive">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Distinctio aliquam architecto ipsa incidunt porro temporibus quas, sunt reiciendis tempore quam
+                    doloribus non eligendi ullam provident similique tenetur quia? Sequi, sed.</p>
+            </div>
+            <div class="faq faq-3">
+                <p class="question question-3">Are the sessions online?<i
+                        class="bi bi-plus-circle-fill plus-rotate plus-active plus plus-3"></i>
+                    <i class="bi bi-dash-circle-fill minus-inactive minus minus-3"></i>
+                </p>
+                <p class="answer answer-3 answer-inactive">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Distinctio aliquam architecto ipsa incidunt porro temporibus quas, sunt reiciendis tempore quam
+                    doloribus non eligendi ullam provident similique tenetur quia? Sequi, sed.</p>
+            </div>
+            <div class="faq faq-4">
+                <p class="question question-4">Where will the sessions happen?<i
+                        class="bi bi-plus-circle-fill plus-rotate plus-active plus plus-4"></i>
+                    <i class="bi bi-dash-circle-fill minus-inactive minus minus-4"></i>
+                </p>
+                <p class="answer answer-4 answer-inactive">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Distinctio aliquam architecto ipsa incidunt porro temporibus quas, sunt reiciendis tempore quam
+                    doloribus non eligendi ullam provident similique tenetur quia? Sequi, sed.</p>
+            </div>
+            <div class="faq faq-5">
+                <p class="question question-5">It’s been more than 48 hours and I haven’t received any call from
+                    support<i class="bi bi-plus-circle-fill plus-active plus plus-5"></i>
+                    <i class="bi bi-dash-circle-fill plus-rotate minus-inactive minus minus-5"></i>
+                </p>
+                <p class="answer answer-5 answer-inactive">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Distinctio aliquam architecto ipsa incidunt porro temporibus quas, sunt reiciendis tempore quam
+                    doloribus non eligendi ullam provident similique tenetur quia? Sequi, sed.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section  -->
+
+    <footer>
+        <div class="footer-row-1">
+            <div class="footer-contact">
+                <div class="footer-logo">
+                    <img src="images/footer-logo.png">
+                    <p>Mentor<span>Kart</span></p>
+                </div>
+                <div class="email-phone">
+                    <p>For any Queries
+                        please connect with us at
+                        support@mentorkart.com</p>
+                    <a href="/">
+                        <p>+91-7678276493</p>
+                    </a>
+                </div>
+                <div class="footer-social">
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-youtube"></i>
+                </div>
+
+            </div>
+            <div class="footer-services">
+                <h3>SERVICES</h3>
+                <p>Find a Mentor</p>
+                <p>Become a Mentor</p>
+                <p>1:1 Mentorship Packages</p>
+                <p>Program & Courses</p>
+                <p>Videos & resourses</p>
+            </div>
+
+            <div class="footer-company">
+                <h3>COMPANY</h3>
+                <p>About us</p>
+                <p>Our team</p>
+                <p>Careers</p>
+                <p>FAQs</p>
+                <p>Contact us</p>
+            </div>
+
+            <div class="footer-more">
+                <h3>MORE</h3>
+                <p>Blogs</p>
+                <p>For campus</p>
+                <p>For Organization</p>
+                <p>Study aborad (Coming soon)</p>
+                <p>Jobs (Coming soon)</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-row-2">
+
+            <div class="copyright-section">
+                <p>©
+                    <script>document.write(new Date().getFullYear())</script>, DGguru Learning Solutions Pvt. Ltd. All
+                    Rights Reserved.
+                </p>
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+                <p>Refund Policy</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html

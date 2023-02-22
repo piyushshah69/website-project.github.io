@@ -1,0 +1,1180 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Merriweather:wght@300;400&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Manrope', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Header area *******************************/
+nav {
+    padding: 0 2.6rem;
+    height: 76px;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.logout{
+    position: absolute;
+    background-color: white;
+    position: absolute;
+    right: 0;
+        bottom: 200px;
+     padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+
+}
+
+@keyframes logoutBtnAnimate{
+    form{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 180deg;
+    }
+}
+
+.logout-btn-active{
+    animation: logoutBtnAnimate .2s forwards;
+}
+
+
+@keyframes logout{
+    from{
+        bottom: 200px;
+    }
+    to{
+        bottom: -140px;
+    }
+}
+
+.logout-active{
+    background-color: white;
+    position: absolute;
+    right: 0;
+    animation: logout-active .2s ease-in-out;
+    bottom: -140px;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+.logout p{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.nav-right,
+.profile,
+.nav-items,
+nav,
+.notification-profile,
+.notification,
+.profile-icon {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 64px;
+    margin-right: 3.5rem;
+    cursor: pointer;
+}
+
+.nav-items {
+    gap: 1.5rem;
+}
+
+.nav-items a {
+    color: black;
+    font-size: 14px;
+}
+
+.nav-right {
+    gap: 3.5rem;
+}
+
+.notification-profile {
+    gap: 1rem;
+}
+
+
+.notification {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    box-shadow: 0px 4px 16px rgba(192, 192, 192, 0.25);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.profile {
+    gap: .45rem;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background: #DEDEDE;
+    box-shadow: 0px 4px 16px rgba(192, 192, 192, 0.25);
+    border-radius: 20px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.hamburger-menu,
+.hamburger-menu label div,
+.profile svg {
+    cursor: pointer;
+}
+
+.hamburger-l1,
+.hamburger-l2,
+.hamburger-l3 {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 4px 0;
+    display: none;
+}
+
+nav #menu-checkbox {
+    display: none;
+}
+
+/* Hero area *******************************/
+
+.hero {
+    height: 518px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 0rem 2.5rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: 76px;
+}
+
+.hero-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 455px;
+}
+
+.hero-heading h1,
+.hero-heading p {
+    color: white;
+}
+
+.hero-map {
+    width: 650px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hero-path {
+    width: 1200px;
+    position: absolute;
+    right: -20%;
+    overflow: hidden;
+}
+
+/* Courses section ***************************/
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 0 0 2.5rem;
+    gap: 2rem;
+}
+
+.course,
+.courses-heading,
+.courses-buttons,
+.scroll-buttons,
+.courses-category,
+.courses-container,
+.course-info,
+.course-type-duration,
+.course-type-duration p {
+    display: flex;
+    align-items: center;
+}
+
+.courses-heading {
+    justify-content: space-between;
+    padding-right: 55px;
+}
+
+.courses-buttons {
+    gap: 1.5rem;
+}
+
+.scroll-buttons {
+    gap: .8rem;
+}
+
+.explore-all {
+    padding: 8px 16px;
+    color: white;
+    background: #0F1113;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #0F1113;
+    transition: .2s;
+}
+
+.explore-all:hover {
+    background-color: white;
+    color: #0F1113;
+}
+
+.left-scroll,
+.right-scroll {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #0F1113;
+    color: #0F1113;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-scroll:hover,
+.right-scroll:hover {
+    background-color: #0F1113;
+    color: white;
+}
+
+.courses-category {
+    gap: 48px;
+}
+
+.courses-category h3 {
+    padding: 0 8px 4px;
+    border-bottom: 4px solid rgb(207, 207, 207);
+}
+
+.courses-category .courses-category-active {
+    border-bottom-color: #FF7070;
+    cursor: default !important;
+}
+
+.courses-category .courses-category-inactive {
+    cursor: pointer;
+}
+
+.courses-container {
+    gap: 2rem;
+    overflow: scroll;
+}
+
+.courses-container::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.course {
+    width: 368px;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px #F1F2F4;
+    border-radius: 8px;
+    background-color: #ffffff;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.course img {
+    border-radius: 8px 8px 0 0;
+}
+
+.course:hover {
+    transform: perspective(500px) translateZ(-5px);
+}
+
+.course-image {
+    width: 368px;
+    border-radius: 8px 8px 0 0;
+}
+
+.course-info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1rem;
+    gap: .5rem;
+}
+
+.course-type-duration {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.course-type-duration p {
+    gap: 10px;
+    font-size: 10px;
+    color: grey;
+}
+
+.course-type-duration p svg {
+    color: black;
+    width: 12px;
+    height: 12px;
+}
+
+.explore-programs {
+    display: flex;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.explore-programs-btn {
+    color: white;
+    background-color: #FF7070;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 1rem 4.6rem;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.explore-programs-btn:hover {
+    background-color: #fb5e5e;
+}
+
+/* Goal Based info section  ************/
+
+.goal-based-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+    padding: 0 6.4rem;
+    position: relative;
+    margin-top: 96px;
+}
+
+.goal-based-info .goal-based-info-hidden-para {
+    display: none;
+}
+
+.goal-based-positioned-items {
+    width: 100%;
+    position: relative;
+}
+
+.goal-based-image {
+    width: 634px;
+    position: absolute;
+    top: -40px;
+}
+
+.goal-based-info-infoboxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 2rem;
+}
+
+.goal-based-info-infoboxes .info-box {
+    max-width: 366px;
+    min-width: 300px;
+    background-color: white;
+    box-shadow: 0px 3.6383px 3.6383px rgba(0, 0, 0, 0.25);
+    border-radius: 7.2766px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 1.4rem;
+    padding: 14px;
+    position: relative;
+}
+
+.goal-based-info-infoboxes .info-box .info-icon {
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: -40px;
+    width: 56px;
+    height: 56px;
+    border: 4px solid #ffffff;
+    border-radius: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goal-based-info-infoboxes .info-box .info-icon svg {
+    width: 20px;
+    height: 20px;
+    color: #FF7070;
+}
+
+.goal-based-info-infoboxes .info-box1 {
+    display: flex;
+    flex: 0 0 40%;
+}
+
+.goal-based-info-infoboxes .info-box2 {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 0 50%;
+    margin-top: 150px;
+    margin-right: 25px;
+}
+
+.goal-based-info-infoboxes .info-box3 {
+    display: flex;
+    justify-content: flex-start;
+    flex: 0 0 40%;
+    margin-left: 50px;
+}
+
+.goal-based-info-infoboxes .info-box4 {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 0 40%;
+    margin-top: 150px;
+}
+
+.goal-based-info-infoboxes .info-box5 {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 100%;
+    margin-top: 100px;
+}
+
+/* Pay Tagline  */
+
+.pay-tagline,
+.meet-mentors {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #0F1113;
+    padding: .5rem 0;
+    gap: 1rem;
+    margin: 4rem 0;
+}
+
+.meet-mentors {
+    background-color: #F5F5F5;
+    color: black;
+}
+
+.pay-tagline p,
+.meet-mentors p {
+    font-size: 22px;
+}
+
+.accomplish-goals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: auto;
+    width: 90%;
+    background-color: #0F1113;
+    padding: 40px 90px;
+}
+
+.accomplish-goals .text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+
+.accomplish-goals .text button {
+    margin-top: 1rem;
+}
+
+/* Mentors Section  */
+
+.mentors {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 90px;
+    gap: 1.5rem;
+    overflow: scroll;
+    margin-bottom: 2rem;
+}
+
+.mentors::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.mentor {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    min-width: 260px;
+    height: 246px;
+    background: #FFFFFF;
+    border: 1px solid #F1F2F4;
+    box-shadow: 0px 8px 16px rgba(15, 17, 19, 0.04);
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+.mentor .info {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/* Excel inrterview section  */
+
+.excel-interview {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px 10%;
+    position: relative;
+    background-color: #0F1113;
+}
+
+.excel-interview .text {
+    width: 60%;
+}
+
+.excel-interview .left-graphics {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.excel-interview .right-graphics {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.excel-interview .text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.excel-interview .text button {
+    margin-top: 1rem;
+}
+
+/* FAQ section  */
+
+.faqs-section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem auto;
+    gap: 1rem;
+}
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq {
+    border: 1px solid #c5c5c5;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.faq .question {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    cursor: pointer;
+    gap: 10px;
+    align-items: center;
+}
+
+.faq .question .minus {
+    display: none;
+}
+
+@keyframes minus-rotate {
+    from {
+        rotate: -180deg;
+    }
+
+    to {
+        rotate: 0deg;
+    }
+}
+
+@keyframes plus-rotate {
+    from {
+        rotate: 180deg;
+    }
+
+    to {
+        rotate: 0deg;
+    }
+}
+
+.faq .question .minus-active {
+    display: block;
+    animation: minus-rotate .2s;
+}
+
+.faq .question .plus-inactive {
+    display: none;
+}
+
+.faq .question .plus-rotate {
+    animation: plus-rotate .2s;
+}
+
+
+.faq .answer {
+    border-top: 1px solid #c5c5c5;
+    padding-top: .5rem;
+}
+
+@keyframes active {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.faq .answer-active {
+    display: block;
+    animation: active .2s;
+
+}
+
+.faq .answer-inactive {
+    display: none;
+}
+
+/* Footer section  */
+
+footer {
+    padding: 5%;
+    justify-content: space-between;
+    background-color: #0F1113;
+    color: white;
+    gap: 1.5rem;
+}
+
+footer,
+.footer-contact,
+.footer-contact .email-phone,
+.footer-services,
+.footer-company,
+.footer-more {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-row-1 {
+    display: flex;
+    justify-content: space-between;flex-wrap: wrap;
+    gap: 2rem;
+}
+.footer-row-2 .copyright-section{
+    display: flex;
+    gap: 48px;
+}
+
+.footer-row-2 .copyright-section p{
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.footer-contact {
+    gap: 24px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.footer-logo p {
+    font-size: 24px;
+}
+
+.footer-logo span {
+    color: #FF7070;
+}
+
+.footer-contact .email-phone {
+    gap: 1rem;
+}
+
+.footer-contact .email-phone a {
+    color: white;
+}
+
+.footer-contact .footer-social {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.footer-contact .footer-social i {
+    transition: .2s;
+}
+
+.footer-contact .footer-social i:hover {
+    transform: rotate(360deg);
+    color: #FF7070;
+    scale: 1.5;
+}
+
+footer hr{
+    background-color: rgb(36, 36, 36);
+    height: 2px;
+    border: none;
+}
+
+.footer-services,
+.footer-company,
+.footer-more {
+    gap: 1rem;
+}
+
+.footer-services p,
+.footer-company p,
+.footer-more p{
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries ***************************/
+
+@media screen and (max-width: 1020px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: .9rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    /* Header area  *********************/
+
+        @keyframes logout {
+            from {
+                bottom: 200px;
+            }
+    
+            to {
+                bottom: -110px;
+            }
+        }
+                
+                .logout-active{
+                    animation: logout .2s;
+                    bottom: -110px;
+                }
+
+    .notification {
+        display: none;
+    }
+
+
+    .hamburger-active-l1 {
+        rotate: 45deg;
+        transform: translateX(1px);
+        margin: 0;
+    }
+
+    .hamburger-active-l2 {
+        display: none !important;
+        margin: 0;
+    }
+
+    .hamburger-active-l3 {
+        rotate: -45deg;
+        transform: translateX(1px);
+        margin: 0;
+    }
+
+    .profile {
+        z-index: 100;
+    }
+
+    nav {
+        padding: 0;
+        /* flex-direction: column; */
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .nav-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        padding: 1rem;
+        gap: 1.2rem;
+    }
+
+    .nav-right {
+        width: 100%;
+        height: 100%;
+        justify-content: flex-end;
+    }
+
+    .profile {
+        padding: 1rem;
+    }
+
+    .nav-items {
+        z-index: 99;
+        justify-content: center;
+        background-color: rgb(240, 240, 240);
+        flex-direction: column;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+
+        top: 0;
+        left: -100vw;
+        gap: 3rem;
+        transition: .1s all ease-in-out;
+    }
+
+    .hamburger-l1,
+    .hamburger-l2,
+    .hamburger-l3 {
+        display: block;
+        transition: .2s all ease-in-out;
+    }
+
+    /* Hero area  *********************/
+
+    .hero {
+        flex-direction: column;
+        padding: 2rem 0 0;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        gap: 3rem;
+    }
+
+    .hero-heading {
+        width: 356px;
+        align-items: center;
+        text-align: center;
+        gap: .8rem;
+        z-index: 10;
+    }
+
+    .hero-map {
+        overflow: hidden;
+
+    }
+
+    .hero-path {
+        width: 100%;
+        position: static;
+        margin-bottom: -1px;
+    }
+
+    /* Courses ****************************/
+
+    .courses {
+        padding: 2rem 0 0 1rem;
+    }
+
+    .courses-heading {
+        padding-right: 25px;
+    }
+
+    .courses-buttons .explore-all {
+        padding: 3px 7px;
+    }
+
+    .courses-buttons .left-scroll,
+    .right-scroll {
+        width: 24px;
+        height: 24px;
+    }
+
+    .courses-category {
+        gap: 18px;
+    }
+
+    .explore-programs {
+        padding-right: 16px;
+    }
+
+    .explore-programs-btn {
+        font-size: .8rem;
+        padding: .5rem 2rem;
+    }
+
+    /* Goal Based info section  ************/
+
+    .goal-based-info {
+        margin-top: 2rem;
+        padding: 0 40px;
+    }
+
+    .goal-based-info .goal-based-info-hidden-para {
+        display: block;
+    }
+
+    .goal-based-image {
+        display: none;
+    }
+
+    .goal-based-info-infoboxes {
+        row-gap: 50px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .goal-based-info-infoboxes .info-box1,
+    .goal-based-info-infoboxes .info-box2,
+    .goal-based-info-infoboxes .info-box3,
+    .goal-based-info-infoboxes .info-box4,
+    .goal-based-info-infoboxes .info-box5 {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        flex: 0 0 0;
+    }
+
+    .goal-based-info-infoboxes .info-box1 {
+        margin-right: 50px;
+    }
+
+    .goal-based-info-infoboxes .info-box2 {
+        margin-left: 50px;
+    }
+
+    .goal-based-info-infoboxes .info-box3 {
+        margin-right: 50px;
+    }
+
+    .goal-based-info-infoboxes .info-box4 {
+        margin-left: 50px;
+    }
+
+    .goal-based-info-infoboxes .info-box5 {
+        margin-right: 50px;
+    }
+
+    /* Pay tagline  */
+
+    .pay-tagline,
+    .meet-mentors {
+        background-color: #F5F5F5;
+        color: black;
+        gap: .5rem;
+        padding: 0 3rem;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .pay-tagline p,
+    .meet-mentors p {
+        font-size: .9rem;
+    }
+
+    /* Accomplish Goals section  */
+
+    .accomplish-goals {
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        padding: 2.5rem 2rem;
+        justify-content: center;
+    }
+
+    .accomplish-goals .text {
+        width: 100%;
+        max-width: 538px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .accomplish-goals .img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .accomplish-goals .img img {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    /* Mentors Section  */
+
+    .mentors {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 1rem;
+        gap: .9rem;
+        overflow: scroll;
+    }
+
+    .mentors::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    .mentor {
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        justify-content: center;
+        align-items: center;
+        min-width: 160px;
+        max-height: 160px;
+        background: #FFFFFF;
+        border: 1px solid #F1F2F4;
+        box-shadow: 0px 8px 16px rgba(15, 17, 19, 0.04);
+        border-radius: 16px;
+        padding: 1rem;
+    }
+
+    .mentor img {
+        width: 60%;
+    }
+
+    .mentor .info {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .2rem;
+    }
+
+    /* Excel in interview section  */
+
+    .excel-interview {
+        flex-wrap: wrap-reverse;
+        padding: 2.5rem 2rem;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .excel-interview .text {
+        width: 100%;
+        max-width: 530px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .excel-interview .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .excel-interview .img img {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    /* FAQ section  */
+
+    .faq .question {
+        font-size: .9rem;
+    }
+
+    /* Footer section */
+
+        .footer-services p,
+        .footer-company p,
+        .footer-more p {
+            font-size: 12px;
+        }
+
+                .footer-row-2 .copyright-section {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+        
+                .footer-row-2 .copyright-section p {
+                    font-size: 10px;
+                }
+            }   
